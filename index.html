@@ -22,13 +22,11 @@
     --teal-deep: #1F9D82;
     --gold: #E3B458;
     --linkedin: #4DA3E0;
-    --danger: #FF9B9B;
     --ring: rgba(255,255,255,0.14);
     color-scheme: dark;
   }
 
   * { box-sizing: border-box; }
-
   html, body { margin: 0; padding: 0; }
 
   body {
@@ -147,7 +145,7 @@
   .link.email .icon-badge { background: rgba(227,180,88,0.20); }
   .link.linkedin .icon-badge { background: rgba(77,163,224,0.20); }
 
-  /* Portfolio */
+  /* Portfolio (somente leitura) */
   .portfolio { width: 100%; margin-top: 38px; }
 
   .section-label {
@@ -155,98 +153,19 @@
     text-transform: uppercase; color: var(--sky); text-align: left;
   }
 
-  .add-btn {
-    width: 100%; margin-top: 14px; display: flex; align-items: center; justify-content: center;
-    gap: 8px; padding: 13px 18px; border-radius: 14px; border: 1.5px dashed var(--ring);
-    background: transparent; color: var(--ink-soft); font-family: inherit; font-size: 14px;
-    font-weight: 500; cursor: pointer; transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
-  }
-
-  .add-btn:hover, .add-btn:focus-visible { border-color: var(--sky); color: var(--ink); background: rgba(110,199,255,0.06); }
-  .add-btn svg { width: 16px; height: 16px; flex: 0 0 auto; }
-
-  .pf-form {
-    margin-top: 14px; padding: 18px; border-radius: 16px; border: 1px solid var(--ring);
-    background: var(--card); display: flex; flex-direction: column; gap: 10px;
-  }
-
-  .pf-label {
-    font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
-    color: var(--ink-faint); margin-top: 4px;
-  }
-
-  .pf-input {
-    width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--ring);
-    background: var(--bg-deep); color: var(--ink); font-family: inherit; font-size: 14px; resize: vertical;
-  }
-
-  .pf-input::placeholder { color: var(--ink-faint); }
-  .pf-input:focus-visible { outline: 2px solid var(--sky); outline-offset: 1px; }
-
-  .pf-error { font-size: 12.5px; color: var(--danger); margin: 0; }
-  .pf-hint { font-size: 12px; color: var(--ink-faint); margin: 0; }
-
-  .pf-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 4px; }
-
-  .pf-btn {
-    padding: 9px 16px; border-radius: 999px; font-family: inherit; font-size: 13.5px;
-    font-weight: 600; cursor: pointer; border: none;
-  }
-
-  .pf-btn-ghost { background: transparent; color: var(--ink-soft); border: 1px solid var(--ring); }
-  .pf-btn-ghost:hover { color: var(--ink); border-color: var(--ink-faint); }
-  .pf-btn-solid { background: var(--sky); color: #06213F; }
-  .pf-btn-solid:hover { background: #86d1ff; }
-  .pf-btn-solid:disabled { opacity: 0.6; cursor: default; }
-
   .portfolio-list { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
 
-  .product-card { position: relative; border-radius: 16px; border: 1px solid var(--ring); background: var(--card); }
+  .product-card { border-radius: 16px; border: 1px solid var(--ring); background: var(--card); }
 
   .product-main { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; text-decoration: none; color: var(--ink); }
-  .product-card.editable .product-main { padding-right: 40px; }
 
   .product-title { font-weight: 600; font-size: 14.5px; color: var(--ink); }
   .product-desc { font-size: 13px; line-height: 1.4; color: var(--ink-soft); }
   .product-link { margin-top: 2px; font-size: 12px; color: var(--gold); word-break: break-all; }
 
-  .product-remove {
-    position: absolute; top: 10px; right: 10px; width: 26px; height: 26px; border-radius: 50%;
-    border: none; background: rgba(255,255,255,0.08); color: var(--ink-faint); font-size: 16px;
-    line-height: 1; cursor: pointer;
-  }
-
-  .product-remove:hover { background: rgba(255,255,255,0.16); color: var(--ink); }
-
   .portfolio-empty { margin-top: 16px; font-size: 13px; color: var(--ink-faint); text-align: center; }
 
-  /* Admin */
-  .admin-zone { width: 100%; margin-top: 28px; }
-
-  .admin-toggle {
-    display: block; margin: 0 auto; background: none; border: none; color: var(--ink-faint);
-    font-family: inherit; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase;
-    cursor: pointer; padding: 6px 10px;
-  }
-
-  .admin-toggle:hover { color: var(--ink-soft); }
-
-  .admin-badge {
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    font-size: 11.5px; color: var(--teal); letter-spacing: 0.04em; text-transform: uppercase;
-  }
-
-  .admin-badge button {
-    background: none; border: none; color: var(--ink-faint); text-decoration: underline;
-    font-family: inherit; font-size: 11.5px; cursor: pointer; padding: 0;
-  }
-
-  .admin-login {
-    margin-top: 10px; padding: 16px; border-radius: 14px; border: 1px solid var(--ring);
-    background: var(--card); display: flex; flex-direction: column; gap: 10px;
-  }
-
-  footer { margin-top: 32px; text-align: center; }
+  footer { margin-top: 40px; text-align: center; }
 
   footer .loc {
     font-size: 11.5px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint);
@@ -330,58 +249,9 @@
 
   <section class="portfolio" aria-label="Portfólio de soluções da Kepha">
     <div class="section-label">&mdash; Portfólio de soluções da Kepha</div>
-
-    <button id="portfolio-add-btn" class="add-btn" type="button" aria-haspopup="true" aria-expanded="false" hidden>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-      <span>Adicionar produto</span>
-    </button>
-
-    <div id="portfolio-form" class="pf-form" hidden>
-      <label class="pf-label" for="pf-title">Título do produto</label>
-      <input id="pf-title" class="pf-input" type="text" maxlength="80" placeholder="Ex: Diagnóstico de Governança">
-
-      <label class="pf-label" for="pf-desc">Descrição</label>
-      <textarea id="pf-desc" class="pf-input" rows="2" maxlength="220" placeholder="Uma linha curta sobre a solução"></textarea>
-
-      <label class="pf-label" for="pf-url">Link de acesso</label>
-      <input id="pf-url" class="pf-input" type="text" placeholder="https://...">
-
-      <p id="pf-error" class="pf-error" hidden></p>
-
-      <div class="pf-actions">
-        <button id="pf-cancel" class="pf-btn pf-btn-ghost" type="button">Cancelar</button>
-        <button id="pf-save" class="pf-btn pf-btn-solid" type="button">Salvar</button>
-      </div>
-    </div>
-
     <div id="portfolio-list" class="portfolio-list"></div>
     <p id="portfolio-empty" class="portfolio-empty" hidden></p>
   </section>
-
-  <div class="admin-zone">
-    <button id="admin-toggle" class="admin-toggle" type="button">Área do administrador</button>
-
-    <div id="admin-badge" class="admin-badge" hidden>
-      <span>Logado como admin</span>
-      <button id="admin-logout" type="button">sair</button>
-    </div>
-
-    <div id="admin-login" class="admin-login" hidden>
-      <label class="pf-label" for="admin-email">Usuário</label>
-      <input id="admin-email" class="pf-input" type="text" autocomplete="username" placeholder="admin">
-
-      <label class="pf-label" for="admin-pass">Senha</label>
-      <input id="admin-pass" class="pf-input" type="password" autocomplete="current-password" placeholder="••••••••">
-
-      <p id="admin-error" class="pf-error" hidden></p>
-      <p class="pf-hint">Acesso restrito à equipe Kepha.</p>
-
-      <div class="pf-actions">
-        <button id="admin-cancel" class="pf-btn pf-btn-ghost" type="button">Cancelar</button>
-        <button id="admin-signin" class="pf-btn pf-btn-solid" type="button">Entrar</button>
-      </div>
-    </div>
-  </div>
 
   <footer>
     <div class="loc">Paraná &middot; Brasil</div>
@@ -393,46 +263,16 @@
 <script>
 (function () {
   // ------------------------------------------------------------------
-  // CONFIGURAÇÃO — preencha com os dados do SEU projeto Supabase.
-  // Veja o README.md para o passo a passo completo.
-  // ------------------------------------------------------------------
   var SUPABASE_URL = "https://eaxqmmxfbxyczohskomp.supabase.co";
   var SUPABASE_ANON_KEY = "sb_publishable_QWQ_uNs7mrLpNJGbsTq7fA_wMTpYUM3";
-
-  // O Supabase exige um e-mail para login. Para o admin poder digitar só
-  // "admin" (sem "@"), completamos por baixo dos panos com este domínio —
-  // ou seja, o usuário "admin" vira "admin@kepha.com.br" ao logar.
-  // Veja o README.md para o passo a passo de como criar esse usuário.
-  var ADMIN_EMAIL_DOMAIN = "kepha.com.br";
   // ------------------------------------------------------------------
 
-  var sb = null;
-  if (window.supabase && SUPABASE_URL.indexOf("SEU-PROJETO") === -1) {
-    sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-  }
-
-  var isAdmin = false;
+  var sb = (window.supabase && SUPABASE_URL.indexOf("SEU-PROJETO") === -1)
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    : null;
 
   var listEl = document.getElementById('portfolio-list');
   var emptyEl = document.getElementById('portfolio-empty');
-  var addBtn = document.getElementById('portfolio-add-btn');
-  var formEl = document.getElementById('portfolio-form');
-  var titleInput = document.getElementById('pf-title');
-  var descInput = document.getElementById('pf-desc');
-  var urlInput = document.getElementById('pf-url');
-  var saveBtn = document.getElementById('pf-save');
-  var cancelBtn = document.getElementById('pf-cancel');
-  var formError = document.getElementById('pf-error');
-
-  var adminToggle = document.getElementById('admin-toggle');
-  var adminBadge = document.getElementById('admin-badge');
-  var adminLogin = document.getElementById('admin-login');
-  var adminEmail = document.getElementById('admin-email');
-  var adminPass = document.getElementById('admin-pass');
-  var adminError = document.getElementById('admin-error');
-  var adminSignin = document.getElementById('admin-signin');
-  var adminCancel = document.getElementById('admin-cancel');
-  var adminLogout = document.getElementById('admin-logout');
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -458,26 +298,18 @@
     listEl.innerHTML = rows.map(function (p) {
       var safeUrl = normalizeUrl(p.url);
       var display = safeUrl.replace(/^https?:\/\//, '');
-      var removeBtn = isAdmin
-        ? '<button class="product-remove" data-id="' + escapeHtml(p.id) + '" aria-label="Remover produto" title="Remover">&times;</button>'
-        : '';
-      return '<div class="product-card' + (isAdmin ? ' editable' : '') + '">' +
+      return '<div class="product-card">' +
         '<a class="product-main" href="' + escapeHtml(safeUrl) + '" target="_blank" rel="noopener">' +
           '<span class="product-title">' + escapeHtml(p.title || 'Sem título') + '</span>' +
           (p.description ? '<span class="product-desc">' + escapeHtml(p.description) + '</span>' : '') +
           '<span class="product-link">' + escapeHtml(display) + ' \u2192</span>' +
         '</a>' +
-        removeBtn +
       '</div>';
     }).join('');
   }
 
   async function loadProducts() {
-    if (!sb) {
-      emptyEl.textContent = 'Portfólio ainda não configurado (veja o README.md).';
-      emptyEl.hidden = false;
-      return;
-    }
+    if (!sb) return;
     var res = await sb.from('products').select('*').order('created_at', { ascending: false });
     if (res.error) {
       emptyEl.textContent = 'Não foi possível carregar o portfólio agora.';
@@ -487,140 +319,7 @@
     renderProducts(res.data);
   }
 
-  function openForm() {
-    formEl.hidden = false;
-    addBtn.hidden = true;
-    addBtn.setAttribute('aria-expanded', 'true');
-    titleInput.focus();
-  }
-
-  function closeForm() {
-    formEl.hidden = true;
-    addBtn.hidden = false;
-    addBtn.setAttribute('aria-expanded', 'false');
-    formError.hidden = true;
-    titleInput.value = '';
-    descInput.value = '';
-    urlInput.value = '';
-  }
-
-  addBtn.addEventListener('click', openForm);
-  cancelBtn.addEventListener('click', closeForm);
-
-  listEl.addEventListener('click', async function (e) {
-    var btn = e.target.closest('.product-remove');
-    if (!btn || !sb) return;
-    btn.disabled = true;
-    var id = btn.getAttribute('data-id');
-    var res = await sb.from('products').delete().eq('id', id);
-    if (res.error) {
-      btn.disabled = false;
-      return;
-    }
-    loadProducts();
-  });
-
-  saveBtn.addEventListener('click', async function () {
-    var title = titleInput.value.trim();
-    var description = descInput.value.trim();
-    var url = urlInput.value.trim();
-
-    if (!title || !url) {
-      formError.textContent = 'Preencha ao menos o título e o link.';
-      formError.hidden = false;
-      return;
-    }
-    if (!sb) {
-      formError.textContent = 'Portfólio ainda não configurado (veja o README.md).';
-      formError.hidden = false;
-      return;
-    }
-
-    saveBtn.disabled = true;
-    var res = await sb.from('products').insert({
-      title: title,
-      description: description,
-      url: normalizeUrl(url)
-    });
-    saveBtn.disabled = false;
-
-    if (res.error) {
-      formError.textContent = 'Não foi possível salvar. Confirme se você está logado como admin.';
-      formError.hidden = false;
-      return;
-    }
-    closeForm();
-    loadProducts();
-  });
-
-  // ---- Admin login/logout -------------------------------------------------
-
-  function setAdminUI(loggedIn) {
-    isAdmin = loggedIn;
-    adminToggle.hidden = loggedIn;
-    adminBadge.hidden = !loggedIn;
-    adminLogin.hidden = true;
-    addBtn.hidden = !loggedIn;
-    if (!loggedIn) closeForm();
-    loadProducts();
-  }
-
-  adminToggle.addEventListener('click', function () {
-    adminLogin.hidden = false;
-    adminToggle.hidden = true;
-    adminEmail.focus();
-  });
-
-  adminCancel.addEventListener('click', function () {
-    adminLogin.hidden = true;
-    adminToggle.hidden = false;
-    adminError.hidden = true;
-    adminEmail.value = '';
-    adminPass.value = '';
-  });
-
-  adminSignin.addEventListener('click', async function () {
-    if (!sb) {
-      adminError.textContent = 'Portfólio ainda não configurado (veja o README.md).';
-      adminError.hidden = false;
-      return;
-    }
-    var user = adminEmail.value.trim();
-    var password = adminPass.value;
-    if (!user || !password) {
-      adminError.textContent = 'Informe usuário e senha.';
-      adminError.hidden = false;
-      return;
-    }
-    // "admin" vira "admin@kepha.com.br"; se já digitarem um e-mail completo
-    // (com "@"), usamos exatamente o que foi digitado.
-    var email = user.indexOf('@') === -1 ? (user + '@' + ADMIN_EMAIL_DOMAIN) : user;
-    adminSignin.disabled = true;
-    var res = await sb.auth.signInWithPassword({ email: email, password: password });
-    adminSignin.disabled = false;
-    if (res.error) {
-      adminError.textContent = 'Usuário ou senha inválidos.';
-      adminError.hidden = false;
-      return;
-    }
-    adminError.hidden = true;
-    adminPass.value = '';
-    setAdminUI(true);
-  });
-
-  adminLogout.addEventListener('click', async function () {
-    if (sb) await sb.auth.signOut();
-    setAdminUI(false);
-  });
-
-  async function init() {
-    loadProducts();
-    if (!sb) return;
-    var sessionRes = await sb.auth.getSession();
-    setAdminUI(!!(sessionRes.data && sessionRes.data.session));
-  }
-
-  init();
+  loadProducts();
 })();
 </script>
 </body>
